@@ -13,12 +13,12 @@ jobs:
     - name: Use SSH key
       run: |
         mkdir -p ~/.ssh/
-        echo "${{secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
+        echo "${{secrets.SSH_PRIVATE_KEY_II}}" > ~/.ssh/id_rsa
         sudo chmod 600 ~/.ssh/id_rsa
     - name: Git Config
       run: |
-        git config --global user.email "andyrosete17@gmail.com"
-        git config --global user.name "andyrosete17"
+        git config --global user.email "cd-user@rick-and-morty.com"
+        git config --global user.name "cd-user"
     - name: Install
       run: npm i --force
     - name: Build
