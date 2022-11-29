@@ -17,16 +17,6 @@ export const RouterComponent: React.FunctionComponent = () => {
           path={switchRoutes.characterDetails}
           component={CharacterScene}
         />
-        {/* <Route
-          exact={true}
-          path={switchRoutes.createHotel}
-          component={CharacterScene}
-        />
-        <Route
-          exact={true}
-          path={switchRoutes.editHotel}
-          component={CharacterScene}
-        /> */}
       </Switch>
     </HashRouter>
   );
