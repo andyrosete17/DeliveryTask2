@@ -16,7 +16,7 @@
     "postinstall": "cd ./server && npm install",
     "deploy": "gh-pages -d dist"
   },
-  "author": "Lemoncode",
+  "author": "Andy",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.5",
