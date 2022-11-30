@@ -15,16 +15,20 @@
 ```
 $ npm i gh-pages --save-dev
 ```
+
 with this library we will be able to deploy our code and execute the actions in github.
 
 - Add deploy line in package.json
+
 ```
     "deploy": "gh-pages -d dist"
 ```
+
 - We add later the continuos deployment file.
   - The file should be in the main route
-  **.github/workflows/cd.yml**
+    **.github/workflows/cd.yml**
   - The configuration of the file should look like this.
+
 ```
 name: Continuous deployment workflow
 
@@ -46,20 +50,24 @@ jobs:
     - name: Deploy
       uses: npm run deploy
 ```
+
 - If the deployment fail, you might need to add the ssh credentials to the setup of the repo
+
   - First generate the private and public keys
+
   ```
   $ ssh-keygen -m PEM -t rsa -C "email@gmail.com"
   ```
+
   - With this you should have created 2 different files **id_rsa** and **id_rsa.pub**
   - Go then to settings => deployKeys
-  ![deploySettings](./assets/deploykeys.png)
+    ![deploySettings](./assets/deploykeys.png)
 
 - We add later the public key
-![publicKey](./assets/publicKey.png)
+  ![publicKey](./assets/publicKey.png)
 
 - We need to do the same with the private key
-![privateKey](./assets/secretKey.png)
+  ![privateKey](./assets/secretKey.png)
 
 - **After you copied the values, remove both files generated**
 - Its also needed to add the ssh configuration to the continuos integration file
@@ -76,9 +84,11 @@ jobs:
         git config --global user.name "andyrosete17"
     - name: Install
 ```
-- Its also important to add a new tag to the deploy step indicating the ssh url
-![sshUrl](./assets/sshurl.png)
 
+## `important` The email in the git config step must be the same used to generate the SSH key
+
+- Its also important to add a new tag to the deploy step indicating the ssh url
+  ![sshUrl](./assets/sshurl.png)
 
 ```
  - name: Deploy
