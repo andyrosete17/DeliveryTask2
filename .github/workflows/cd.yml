@@ -20,7 +20,7 @@ jobs:
         git config --global user.email "cd-user@rick-and-morty.com"
         git config --global user.name "cd-user"
     - name: Install
-      run: npm ci --save --legacy-peer-deps
+      run: npm ci
     - name: Build
       run: npm run build
     - name: Deploy

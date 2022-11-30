@@ -33,7 +33,7 @@
     "graphql-request": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^16.13.1",
-    "react-hot-loader": "^4.12.21",
+    "react-hot-loader": "^4.13.1",
     "react-router-dom": "^5.2.0",
     "regenerator-runtime": "^0.13.5"
   },
@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "@hot-loader/react-dom": "^16.13.0",
+    "@hot-loader/react-dom": "^16.14.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@types/react-router-dom": "^5.2.0",
