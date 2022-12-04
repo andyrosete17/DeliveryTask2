@@ -113,3 +113,18 @@ jobs:
 - Fill the site info
 ![siteInfo](./assets/siteInfo.png)
 
+## `important` In the configuration the build command should be
+```
+npm run build:prod
+```
+## `important` The publish directory should be dist
+
+![configRender](./assets/configRender.png)
+
+- As soon as its deployed you should be able to see this
+
+![deployScreen](./assets/deployScreen.png)
+![deployLink](./assets/deployLink.png)
+
+- And finally your web should be deployed
+![renderDeploy](./assets/renderDeploy.png)
