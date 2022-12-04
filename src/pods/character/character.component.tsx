@@ -1,12 +1,12 @@
 import {
-  Avatar,
   Card,
   CardActionArea,
-  CardContent,
   CardHeader,
+  Avatar,
+  CardContent,
   CardMedia,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import React from 'react';
 
 import { Character } from './character.vm';

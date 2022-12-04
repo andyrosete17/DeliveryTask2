@@ -1,15 +1,14 @@
 const merge = require('webpack-merge');
-const Dotenv = require('dotenv-webpack');
 const base = require('./base');
 const helpers = require('./helpers');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = merge(base, {
   mode: 'production',
   output: {
     path: helpers.resolveFromRootPath('dist'),
     filename: './js/[name].[chunkhash].js',
-    assetModuleFilename: './images/[hash][ext][query]',
   },
   module: {
     rules: [

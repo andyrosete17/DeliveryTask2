@@ -3,13 +3,13 @@ import { useField } from 'formik';
 import { Lookup } from 'common/models';
 import * as classes from './select.styles';
 import {
-  SelectProps,
   FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
   FormHelperText,
-} from '@mui/material';
+  InputLabel,
+  MenuItem,
+  Select,
+  SelectProps,
+} from '@material-ui/core';
 
 interface Props extends SelectProps {
   items: Lookup[];

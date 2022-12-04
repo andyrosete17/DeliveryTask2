@@ -6,7 +6,7 @@ import {
   CardContent,
   CardMedia,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import * as React from 'react';
 
 import { CharacterEntityVm } from '../character-collection.vm';

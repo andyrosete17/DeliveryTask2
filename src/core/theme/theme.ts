@@ -1,4 +1,4 @@
-import { createMuiTheme, Theme } from "@mui/material";
+import { createMuiTheme, Theme } from "@material-ui/core";
 
 const defaultTheme = createMuiTheme();
 

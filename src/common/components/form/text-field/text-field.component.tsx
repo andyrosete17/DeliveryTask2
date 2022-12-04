@@ -2,7 +2,7 @@ import React from 'react';
 import { cx } from 'emotion';
 import { useField } from 'formik';
 import * as classes from './text-field.styles';
-import { TextFieldProps, TextField  } from '@mui/material';
+import { TextField, TextFieldProps } from '@material-ui/core';
 
 export const TextFieldComponent: React.FunctionComponent<TextFieldProps> = (
   props

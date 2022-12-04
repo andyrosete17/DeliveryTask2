@@ -1,5 +1,6 @@
-import { AccountCircle } from '@mui/icons-material';
-import { AppBar, Toolbar, IconButton } from '@mui/material';
+
+import { AppBar, Toolbar, IconButton } from '@material-ui/core';
+import { AccountCircle } from '@material-ui/icons';
 import * as React from 'react';
 import * as classes from './app.layout.styles';
 
