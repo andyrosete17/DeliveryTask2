@@ -94,3 +94,22 @@ jobs:
  - name: Deploy
       uses: npm run deploy -- -r git@github.com:andyrosete17/DeliveryTask2.git
 ```
+
+# Check results
+- If you click in action deployments, you should be able to see the page deployed.
+![deployments](./assets//deployments.png)
+![viewDeployments](./assets//viewDeployments.png)
+
+--------------------------------------------------------------------------------------------------
+
+# Deployment using [Render](https://dashboard.render.com/)
+- First step is created an account in the page.
+- Once the account is created you should be able of navigating to a dashboard like this
+![dashboard](./assets/dashboardRender.png)
+- For this project we can create an static sites project
+  - then connect your repo with Render
+- Select the correct repo to render
+![publirecpo](./assets/publicRepo.png)
+- Fill the site info
+![siteInfo](./assets/siteInfo.png)
+
